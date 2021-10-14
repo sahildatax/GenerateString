@@ -7,8 +7,6 @@ class Data:
 Halo {}
 
 Welcome To {}
-
-Session Generator Bot
     """
 
     # Home Button
