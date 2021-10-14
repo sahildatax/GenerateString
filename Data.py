@@ -6,20 +6,15 @@ class Data:
     START = """
 Halo {}
 
-Selamat datang {}
+Welcome To {}
 
-Jika kamu tidak percaya bot ini, 
-1) gausah baca pesan ini
-2) blokir bot atau delete chat
-
-Bot ini Bekerja Untuk Membantu Kamu Mendapatkan String Session Via Bot. Rekomendasi Jika Ingin Mengambil String Gunakan Akun Lain, Agar Tidak Delay. Terimakasih
-By @fckualot
+Session Generator Bot
     """
 
     # Home Button
     home_buttons = [
         [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Kembali 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="🏠 Return 🏠", callback_data="home")]
     ]
 
     generate_button = [
@@ -29,37 +24,28 @@ By @fckualot
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Maintaned By ✨", url="https://t.me/fckualot")],
+        [InlineKeyboardButton("✨ Maintaned By Sahil✨", url="https://t.me/sahil_nolia")],
         [
-            InlineKeyboardButton("Cara Menggunakan Saya ❔", callback_data="help"),
+            InlineKeyboardButton("Help ❔", callback_data="help"),
             InlineKeyboardButton("🎪 About 🎪", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ Info Bot Lain ♥", url="https://t.me/rioprojects")],
+        [InlineKeyboardButton("♥ Bot Info ♥", url="https://t.me/rioprojects")],
     ]
 
     # Help Message
     HELP = """
 ✨ **Available Commands** ✨
 
-/about - Tentang Bot ini
 /help - This Message
-/start - Mulai Bot
-/generate - Mulai Generating Session
-/cancel - Membatalkan process
-/restart - Membatalkan process
+/start - Check Dead or Alive
+/generate - Generate Session
+/cancel - Cancel process
+/restart - Restart process
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+This is a Session Generator Bot
 
-Sebuah telegram bot untuk mengambil pyrogram dan telethon string session by @stringriobot
 
-Group Support : [Gabung](https://t.me/riogroupsupport)
-
-Framework : [Pyrogram](docs.pyrogram.org)
-
-Language : [Python](www.python.org)
-
-Developer : @fckualot
     """
